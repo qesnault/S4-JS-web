@@ -85,12 +85,10 @@ function addCircle(c) {
         ctx.fill();
         ctx.stroke();
         c.dom.appendChild(circle);
-        c.atome = true;
         c.flag = true;
     } else {
         var circle = document.getElementById("cellule" + c.li + c.co);
         c.dom.removeChild(circle);
-        c.atome = false;
         c.flag = false;
     }
 }
@@ -134,6 +132,7 @@ function fillRandom() {
         if (!cell.atome) {
             if (debug) {
                 addCircle(cell);
+                cell.atome = true;
             } else {
                 cell.atome = true;
             }
