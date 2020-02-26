@@ -111,14 +111,14 @@ function fillRandom(){
     for(var i =0; i<5;){
         var x = randomInt(8)+1;
         var y = randomInt(8)+1;
-        var cell = univers[2][3];
-        i++;
+        var cell = univers[x][y];
         if(!cell.atome){
             addCircle(cell);
-        }
+            i++;
+        } 
     }
 }
 
 function randomInt(n){
-    Math.floor(Math.random() * Math.floor(n)); // returns a random integer from 0 to n-1
+    return Math.floor(Math.random() * Math.floor(n)); // returns a random integer from 0 to n-1
 }
