@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>INF4375: JQuery</title>
+
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="header">
+			<div id="menu">
+				<ul>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Contenu</a></li>
+					<li><a href="#">Matériel</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div id="logo">
+				<h1>le joli titre</h1>
+				<h2>Programmation web</h2>
+			</div>
+		</div>
+
+		<div id="page">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Du texte...</h2>
+						<p>Un paragraphe.</p>
+					</li>
+					<li>
+						<h2>Encore du texte...</h2>
+						<p>Toujours plus de texte. </p>
+						<p>Toujours plus de texte.</p>
+					</li>
+				</ul>
+			</div>
+
+			<div id="content">
+				<div class="post">
+					<p class="meta">
+						<span class="date">aujourd'hui</span>
+						Publié par <a href="#">Jack</a>
+					</p>
+					<h2 class="title">Exemple de post</h2>
+					<div class="entry">
+						<p>Il est toujours difficile de trouver du texte pertinent à
+							écrire dans un exemple de page web.Ainsi est né Lorem Ipsum.</p>
+						<p>
+							On ajoute aussi un exemple de lien: <a href="http://www.lipsum.com/">Lorem ipsum</a>
+						</p>
+					</div>
+					<div>
+						<a href="#" class="links">Lire l'article au complet</a>
+					</div>
+				</div>
+				<div class="post">
+					<p class="meta">
+						<span class="date">Mardi, le 6 septembre 2011 01:00</span>
+						Publié par <a href="#">Jack</a>
+					</p>
+					<h2 class="title">Exemple de post</h2>
+					<div class="entry">
+						<p>Il est toujours difficile de trouver du texte pertinent à
+							écrire dans un exemple de page web. Ainsi est né Lorem Ipsum.</p>
+						<p>
+							On ajoute aussi un exemple de lien : <a href="http://www.lipsum.com/">Lorem ipsum</a>
+						</p>
+					</div>
+					<div>
+						<a href="#" class="links">Lire l'article au complet</a>
+					</div>
+				</div>
+
+				<div class="post">
+					<h2 class="title">Formulaire d'inscription</h2>
+					<div class="entry">
+						<form method="post" action="javascript: return false;">
+							<table>
+								<tr>
+									<td><label for="email">Email :</label></td>
+									<td>
+										<input type="text" name="email" id="email" maxlength="25" />
+									</td>
+								</tr>
+								<tr>
+									<td><label for="password">Mot de passe :</label></td>
+									<td>
+										<input type="password" name="password" id="password" maxlength="10" />
+									</td>
+								</tr>
+								<tr>
+									<td><label>Sexe :</label></td>
+									<td>
+										<input type="radio" name="sexe" value="H" /> Homme
+										<br/>
+										<input type="radio" name="sexe" value="F" /> Femme
+									</td>
+								</tr>
+								<tr>
+									<td><label>Date de naissance :</label></td>
+									<td>
+										<select name="d_jour">
+											<option>1</option>
+											<option>2</option>
+											<option>...</option>
+											<option>31</option>
+										</select>
+										&nbsp;
+										<select name="d_mois">
+											<option>1</option>
+											<option>2</option>
+											<option>...</option>
+											<option>12</option>
+										</select>
+										&nbsp;
+										<select name="d_annee">
+											<option>1940</option>
+											<option>1941</option>
+											<option>...</option>
+											<option selected="selected">2009</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label for="desc">Entrez une courte description sur vous :</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<textarea name="desc" id="desc" cols="50" rows="5"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td><label>Vos centres d'intérêts :</label></td>
+									<td>
+										<input type="checkbox" name="interets[]" value="informatique" />
+										&nbsp; Informatique
+										<br/>
+										<input type="checkbox" name="interets[]" value="musique" />
+										&nbsp; Musique
+										<br/>
+										<input type="checkbox" name="interets[]" value="cinema" />
+										&nbsp; Cinéma
+									</td>
+								</tr>
+								<tr>
+									<td><label for="hobbies">Vos Hobbies :</label></td>
+									<td>
+										<select name="hobbies[]" id="hobbies" multiple="multiple">
+											<option value="sport">J'aime le sport</option>
+											<option value="cinema">J'aime le cinéma</option>
+											<option value="musique">J'aime la musique</option>
+											<option value="culture">J'aime la culture</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="submit" value="M'inscrire" />
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+
+				<div id="footer">
+					<p>
+						Copyright &copy; 
+					</p>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
