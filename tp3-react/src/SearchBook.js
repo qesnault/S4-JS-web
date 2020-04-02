@@ -9,7 +9,7 @@ export default class SearchBook extends React.Component {
         this.mySubmitHandler = this.mySubmitHandler.bind(this);
     }
 
-    handleChange(event) {    
+    handleChange(event) {
       this.setState({name: event.target.value});  
     }
 
@@ -22,7 +22,7 @@ export default class SearchBook extends React.Component {
       return (
         <form onSubmit={this.mySubmitHandler.bind(this)}>
             <div class="input-field">
-                <input id="search" type="search" onChange={this.handleChange} value={this.state.name} required/>
+                <input id="search" type="search" onChange={this.handleChange} required/>
                 <label class="label-icon" for="search" onClick=""><i class="material-icons">search</i></label>
                 <i class="material-icons">close</i>
             </div>
