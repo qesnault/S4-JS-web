@@ -18,15 +18,8 @@ class App extends React.Component {
 
   changePage(change) {
     if (parseInt(this.state.page, 10) + parseInt(change, 10) > 0) {
-      this.setState({ page: parseInt(this.state.page, 10) + parseInt(change, 10) }, () => { this.forceUpdate(); });
-      //this.forceUpdate();
+      this.setState({ page: parseInt(this.state.page, 10) + parseInt(change, 10) } );
     }
-  }
-
-  setStateSynchronous = (stateUpdate) => {
-    return new Promise(resolve => {
-      this.setState(stateUpdate, () => resolve());
-    });
   }
 
   render() {
@@ -51,6 +44,12 @@ class App extends React.Component {
           <li class="active"><a href="#!">{this.state.page}</a></li>
           <li class="waves-effect"><a onClick={() => this.changePage(1)}><i class="material-icons">chevron_right</i></a></li>
         </ul>
+
+        <footer class="page-footer">
+          <div class="footer-copyright">
+            Réalisé par Quentin ESNAULT
+          </div>
+        </footer>
       </div>
     );
   }
