@@ -28,7 +28,7 @@ class App extends React.Component {
 
         <nav>
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Google API</a>
+            <a href="#" class="brand-logo"><i class="material-icons">local_library</i>Google API</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li>
                 <SearchBook handleSubmit={this.changeBookName.bind(this)} bookName={this.state.bookSearch} />
