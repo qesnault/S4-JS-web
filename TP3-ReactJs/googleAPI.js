@@ -38,6 +38,11 @@ class App extends React.Component {
                 <SearchBook onSubmit={this.handleSearch} />
                 <BookList booklist={list} />
                 <Pagination onClick={this.handleSearch} />
+                <footer className="page-footer">
+                    <div className="footer-copyright">
+                        Réalisé par Quentin ESNAULT
+                    </div>
+                </footer>
             </div>
         );
     }
